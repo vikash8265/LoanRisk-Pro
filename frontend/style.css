@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Inter,
+        Segoe UI,
+        Arial,
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07111f,
+            #12233d
+        );
+
+    color: #f4f7ff;
+}
+
+header {
+
+    padding: 22px 7%;
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    border-bottom:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+}
+
+.logo {
+
+    font-size: 26px;
+
+    font-weight: 800;
+}
+
+.tagline {
+
+    color: #91a5c8;
+}
+
+main {
+
+    width: min(
+        1200px,
+        92%
+    );
+
+    margin: auto;
+}
+
+.hero {
+
+    padding:
+        50px
+        0
+        35px;
+
+    text-align: center;
+}
+
+.hero h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            34px,
+            5vw,
+            54px
+        );
+}
+
+.hero p {
+
+    color: #a8bad6;
+
+    font-size: 18px;
+}
+
+.layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        0.8fr;
+
+    gap: 25px;
+
+    padding-bottom: 50px;
+}
+
+.card {
+
+    padding: 27px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.10
+        );
+
+    box-shadow:
+        0
+        25px
+        60px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 15px;
+}
+
+label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    color: #becbe0;
+
+    font-size: 14px;
+}
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.13
+        );
+
+    background: #101d31;
+
+    color: white;
+
+    outline: none;
+}
+
+button {
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 15px;
+
+    border: 0;
+
+    border-radius: 11px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3977ff,
+            #6a9cff
+        );
+}
+
+button:disabled {
+
+    opacity: 0.6;
+}
+
+.result-card {
+
+    min-height: 430px;
+}
+
+.hidden {
+
+    display: none;
+}
+
+.badge {
+
+    display: inline-block;
+
+    padding:
+        8px
+        14px;
+
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    font-weight: 800;
+}
+
+.risk-low {
+
+    color: #62dfa9;
+
+    background:
+        rgba(
+            30,
+            190,
+            125,
+            0.18
+        );
+}
+
+.risk-medium {
+
+    color: #ffc95f;
+
+    background:
+        rgba(
+            255,
+            185,
+            40,
+            0.18
+        );
+}
+
+.risk-high {
+
+    color: #ff8a8a;
+
+    background:
+        rgba(
+            255,
+            80,
+            80,
+            0.18
+        );
+}
+
+.small-title {
+
+    color: #9eb0cd;
+
+    text-align: center;
+}
+
+.probability {
+
+    text-align: center;
+
+    font-size: 54px;
+
+    font-weight: 800;
+}
+
+.progress {
+
+    height: 10px;
+
+    margin:
+        20px
+        0;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.10
+        );
+}
+
+.progress-fill {
+
+    width: 0;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #3d7eff,
+            #72adff
+        );
+
+    transition:
+        width
+        0.4s ease;
+}
+
+.message {
+
+    padding: 14px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(
+            65,
+            130,
+            255,
+            0.12
+        );
+}
+
+.disclaimer {
+
+    margin-top: 15px;
+
+    color: #8296b5;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #7185a5;
+}
+
+@media (max-width: 850px) {
+
+    .layout {
+
+        grid-template-columns:
+            1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .tagline {
+
+        display: none;
+    }
+}

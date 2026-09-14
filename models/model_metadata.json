@@ -1,0 +1,13 @@
+{
+    "model_name": "HistGradientBoostingClassifier",
+    "threshold": 0.175,
+    "learning_rate": 0.05,
+    "max_iter": 200,
+    "max_leaf_nodes": 15,
+    "accuracy": 0.803,
+    "precision": 0.2954,
+    "recall": 0.5026,
+    "f1_score": 0.3721,
+    "roc_auc": 0.7585,
+    "dataset_type": "Synthetic / simulated loan default dataset"
+}
